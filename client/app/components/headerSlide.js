@@ -1,3 +1,4 @@
+import React from 'react';
 
 export default class HeaderSlide extends React.Component () {
 	constructor(props) {

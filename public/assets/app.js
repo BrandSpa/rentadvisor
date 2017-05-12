@@ -14,7 +14,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(92);
+var _react = __webpack_require__(74);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -97,7 +97,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = multipleRender;
 
-var _react = __webpack_require__(92);
+var _react = __webpack_require__(74);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -149,6 +149,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _react = __webpack_require__(74);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -182,25 +188,25 @@ var HeaderSlide = function (_React$Component) {
 				background: this.props.sectionRight.bg
 			};
 
-			return React.createElement(
+			return _react2.default.createElement(
 				"div",
 				null,
-				React.createElement(
+				_react2.default.createElement(
 					"div",
 					{ style: sectionLeft, className: "col-lg-5" },
-					React.createElement("div", { dangerouslySetInnerHTML: { __html: this.props.sectionLeft.content } })
+					_react2.default.createElement("div", { dangerouslySetInnerHTML: { __html: this.props.sectionLeft.content } })
 				),
-				React.createElement(
+				_react2.default.createElement(
 					"div",
 					{ style: sectionRight, className: "col-lg-7" },
-					React.createElement("img", { src: this.props.sectionRight.img, alt: "" })
+					_react2.default.createElement("img", { src: this.props.sectionRight.img, alt: "" })
 				)
 			);
 		}
 	}]);
 
 	return HeaderSlide;
-}(React.Component());
+}(_react2.default.Component());
 
 exports.default = HeaderSlide;
 
