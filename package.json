@@ -12,6 +12,7 @@
     "axios": "^0.16.1",
     "babel-polyfill": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "bootstrap": "4.0.0-alpha.6",
     "flexboxgrid-sass": "^8.0.5",
     "normalize.css": "^7.0.0",
     "react": "^15.5.4",
