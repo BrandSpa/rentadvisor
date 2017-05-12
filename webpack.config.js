@@ -2,11 +2,11 @@
 const webpack = require('webpack');
 const fs = require('fs');
 const Path = require('path');
-const WebpackCleanupPlugin =  require('webpack-cleanup-plugin');
+// const WebpackCleanupPlugin =  require('webpack-cleanup-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const extractSass = new ExtractTextPlugin({
-    filename: "[name].[contenthash].css",
+    filename: "[name].css",
     disable: false
 });
 
@@ -36,11 +36,11 @@ const changeFilesNames = function() {
 module.exports = {
   entry: {
     vendor: ['babel-polyfill', 'react', 'react-dom', 'axios'],
-  	app: './client/app.js'
+  	app: './client/app/index.js'
   },
   output: {
-  	path: Path.join(__dirname, '/public/js'),
-    filename: '[name].[chunkhash].js'
+  	path: Path.join(__dirname, '/public/assets'),
+    filename: '[name].js'
   },
   module: {
   	loaders: [
@@ -54,10 +54,10 @@ module.exports = {
         use: extractSass.extract({
           use: [{
             loader: "css-loader"
-          }, {
+          }, 
+					{
             loader: "sass-loader"
           }],
-           // use style-loader in development
           fallback: "style-loader"
         })
       }
@@ -66,13 +66,13 @@ module.exports = {
 	plugins: [
       new webpack.optimize.CommonsChunkPlugin({ 
         name: 'vendor', 
-        filename: 'vendor.[chunkhash].js', 
+        filename: 'vendor.js', 
         minChunks: 2
       }),
-      changeFilesNames,
-      new WebpackCleanupPlugin({
-        exclude: ["admin.js"],
-      }),
+      // changeFilesNames,
+      // new WebpackCleanupPlugin({
+      //   exclude: ["admin.js"],
+      // }),
       extractSass
     ]
 };
