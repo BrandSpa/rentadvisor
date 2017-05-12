@@ -1,0 +1,19 @@
+{
+  "name": "ra_theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/BrandSpa/rentadvisor",
+    "type": "git"
+  },
+  "author": "Alejandro Sanabria <alesanabriav@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "flexboxgrid-sass": "^8.0.5"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-polyfill": "^6.23.0"
+  }
+}
