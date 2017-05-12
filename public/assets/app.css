@@ -1965,25 +1965,34 @@
 
 body {
   background: #EDEDED;
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: "Roboto", sans-serif; }
 
 h1 {
-  font-size: 2.8125rem; }
+  font-size: 2.8125rem;
+  font-family: "Gotham Rounded Book", sans-serif; }
 
 h2 {
-  font-size: 2.8125rem; }
+  font-size: 1.75rem;
+  font-family: "Gotham Rounded Book", sans-serif; }
 
 h3 {
-  font-size: 2.8125rem; }
+  font-size: 1.25rem;
+  font-family: "Gotham Rounded Book", sans-serif; }
 
 h4 {
-  font-size: 2.8125rem; }
+  font-size: 0.9375rem;
+  font-family: "Gotham Rounded Book", sans-serif; }
 
 h5 {
-  font-size: 2.8125rem; }
+  font-size: 0.6875rem;
+  font-family: "Gotham Rounded Book", sans-serif; }
 
 h6 {
-  font-size: 2.8125rem; }
+  font-size: 5.9375rem;
+  font-family: "Gotham Rounded Book", sans-serif; }
 
 p {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }

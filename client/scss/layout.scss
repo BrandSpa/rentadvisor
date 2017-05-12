@@ -1,36 +1,48 @@
 @import '../../node_modules/flexboxgrid-sass/flexboxgrid.scss';
 
-$fontsize: 16;
+$font_size_base: 16;
+$font_family_base:  'Roboto', sans-serif;
+$font_family_title: 'Gotham Rounded Book', sans-serif;
+$font_family_subtitle: 'Gotham Rounded Medium', sans-serif;
 
 body {
 	background: #EDEDED;
 	font-size: 16px;
+	font-family: $font_family_base;
 }
 
 h1 {
-	font-size: (45 / 16) * 1rem;
+	font-size: (45 / $font_size_base) * 1rem;
+	font-family: $font_family_title;
 }
 
 h2 {
-	font-size: (45 / 16) * 1rem;
+	font-size: (28 / $font_size_base) * 1rem;
+	font-family: $font_family_title;
 }
 
 h3 {
-	font-size: (45 / 16) * 1rem;
+	font-size: (20 / $font_size_base) * 1rem;
+	font-family: $font_family_title;
 }
 
 h4 {
-	font-size: (45 / 16) * 1rem;
+	font-size: (15 / $font_size_base) * 1rem;
+	font-family: $font_family_title;
 }
 
 h5 {
-	font-size: (45 / 16) * 1rem;
+	font-size: (11 / $font_size_base) * 1rem;
+	font-family: $font_family_title;
 }
 
 h6 {
-	font-size: (45 / 16) * 1rem;
-}	
+	font-size: (95 / $font_size_base) * 1rem;
+	font-family: $font_family_title;
+}
 
 p {
-	font-size: (20 / 16) * 1rem;
+	font-size: (20 / $font_size_base) * 1rem;
+	font-family: $font_family_base;
+	font-weight: 300;
 }
