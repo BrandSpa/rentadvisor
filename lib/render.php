@@ -9,7 +9,7 @@ function bs_render($template_file, $data = []) {
 			'cache' => $dir_base . 'storage/cache'
 	));
 
-	$render_shortcode = new Twig_Filter('render_shortcode', function ($string) {
+	$render_shortcode = new Twig_SimpleFilter('render_shortcode', function ($string) {
     return do_shortcode($string);
 	}, array('is_safe' => array('html')));
 	
