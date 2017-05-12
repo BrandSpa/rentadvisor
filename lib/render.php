@@ -10,8 +10,10 @@ function bs_render($template_file, $data = []) {
 	));
 
 	$template = $twig->load($template_file);
-	
+
 	ob_start();
 	$template->render($data);
-	return ob_get_clean();
+	$content = ob_get_contents();
+	ob_get_clean();
+	return $content;
 }
