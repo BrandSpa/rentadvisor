@@ -197,7 +197,7 @@ var HeaderSlide = function (_React$Component) {
 	}]);
 
 	return HeaderSlide;
-}(_react2.default.Component());
+}(_react2.default.Component);
 
 HeaderSlide.defaultProps = {
 	sectionLeft: {},

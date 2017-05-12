@@ -4,7 +4,7 @@ import Slide from './headerSlide';
 class HeaderSlider extends React.Component {
 
 	constructor(props) {
-		Super(props);
+		super(props);
 
 		this.changeSlide = this.changeSlide.bind(this);
 

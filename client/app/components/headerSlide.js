@@ -1,8 +1,8 @@
 import React from 'react';
 
-class HeaderSlide extends React.Component () {
+class HeaderSlide extends React.Component {
 	constructor(props) {
-		Super(props);
+		super(props);
 	}
 
 	render() {
