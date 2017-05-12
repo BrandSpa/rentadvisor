@@ -1,3 +1,3 @@
 <?php get_header() ?>
-<?php bs_render('templates/index.html') ?>
+<?php bs_render('index.html') ?>
 <?php get_footer() ?>

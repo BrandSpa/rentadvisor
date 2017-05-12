@@ -9,7 +9,8 @@ function bs_render($template_file, $data = []) {
 			'cache' => $dir_base . 'storage/cache'
 	));
 
-	$template = $twig->load($dir_base . $template_file);
+	$template = $twig->load($template_file);
+	
 	ob_start();
 	$template->render($data);
 	return ob_get_clean();
