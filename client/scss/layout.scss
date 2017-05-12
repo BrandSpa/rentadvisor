@@ -1,9 +1,33 @@
 @import '../../node_modules/flexboxgrid-sass/flexboxgrid.scss';
-
+//fonts
 $font_size_base: 16;
 $font_family_base:  'Roboto', sans-serif;
 $font_family_title: 'Gotham Rounded Book', sans-serif;
 $font_family_subtitle: 'Gotham Rounded Medium', sans-serif;
+
+//colors
+$blue_electric: #7FFAFF;
+$blue_turquoise: #27E5FB;
+$blue_allports: #107D9F;
+$blue_malibu : #73D6FF;
+$blue_doger: #31A2FC;
+$blue_cerulean: #295AB7;
+
+$purple_lavander: #8557E4;
+$purple_heart: #6135BB;
+$purple_paris: #322365;
+
+$fuchsia_pink: #FF74EC;
+$fuchsia_cerise: #FC3481;
+$fuchsia_maroon: #C11658;
+
+$yellow_sun: #FAD741;
+$yellow_turbo: #F5CD21;
+$yellow_corn: #EDC20F;
+
+$green_lime: #99FF79;
+$green_pastel: #5DE87B;
+$green_emerald: #43CD7F;
 
 body {
 	background: #EDEDED;
