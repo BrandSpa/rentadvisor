@@ -59,7 +59,7 @@ var HeaderSlider = function (_React$Component) {
 				'div',
 				{ style: sectionContainer },
 				this.props.slides.map(function (slide, i) {
-					return _react2.default.createElement(_headerSlide2.default, _extends({ key: i }, slide));
+					return _react2.default.createElement(_headerSlide2.default, _extends({ key: i }, slide, { height: h }));
 				})
 			);
 		}
@@ -172,16 +172,18 @@ var HeaderSlide = function (_React$Component) {
 		key: "render",
 		value: function render() {
 			var sectionLeft = {
+				height: this.props.height,
 				background: this.props.sectionLeft.bg
 			};
 
 			var sectionRight = {
+				height: this.props.height,
 				background: this.props.sectionRight.bg
 			};
 
 			return _react2.default.createElement(
 				"div",
-				null,
+				{ className: "row" },
 				_react2.default.createElement(
 					"div",
 					{ style: sectionLeft, className: "col-lg-5" },
