@@ -2410,6 +2410,9 @@ template {
   .last-lg {
     order: 1; } }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 body {
   background: #EDEDED;
   font-size: 16px;
