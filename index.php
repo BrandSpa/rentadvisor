@@ -5,7 +5,7 @@
 
     <div 
       class="bs-headerslider" 
-      data-props='{"slider": [
+      data-props='{"slides": [
         {
           "sectionLeft": {
             "bg": "#27E5FB"
