@@ -3,13 +3,13 @@
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <?php the_content() ?>
     <div class="row">
-    <div style="background:red" class="col-xs-12
+    <div  class="col-xs-12
               col-sm-8
               col-md-6
               col-lg-4">
-      <div class="box">Responsive</div>
+      <div style="background:#7FFAFF" class="box">Responsive</div>
   </div>
-      <div style="background:#FC3481" class="col-xs-12
+      <div style="background:#27E5FB" class="col-xs-12
               col-sm-8
               col-md-6
               col-lg-4">
