@@ -1,14 +1,8 @@
 import React from 'react';
 
-export default class HeaderSlide extends React.Component () {
+class HeaderSlide extends React.Component () {
 	constructor(props) {
 		super(props);
-		
-		this.props =  {
-			sectionLeft: {},
-			sectionRight: {}
-		}
-
 	}
 
 	render() {
@@ -32,3 +26,10 @@ export default class HeaderSlide extends React.Component () {
 			)
 	}
 }
+
+HeaderSlide.defaultProps = {
+	sectionLeft: {},
+	sectionRight: {}
+};
+
+export default HeaderSlide;

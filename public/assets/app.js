@@ -43,10 +43,6 @@ var HeaderSlider = function (_React$Component) {
 		_this.state = {
 			section: 0
 		};
-
-		_this.props = {
-			slides: []
-		};
 		return _this;
 	}
 
@@ -71,6 +67,8 @@ var HeaderSlider = function (_React$Component) {
 
 	return HeaderSlider;
 }(_react2.default.Component);
+
+HeaderSlider.defaultProps = { slides: [] };
 
 exports.default = HeaderSlider;
 
@@ -167,14 +165,7 @@ var HeaderSlide = function (_React$Component) {
 	function HeaderSlide(props) {
 		_classCallCheck(this, HeaderSlide);
 
-		var _this = _possibleConstructorReturn(this, (HeaderSlide.__proto__ || Object.getPrototypeOf(HeaderSlide)).call(this, props));
-
-		_this.props = {
-			sectionLeft: {},
-			sectionRight: {}
-		};
-
-		return _this;
+		return _possibleConstructorReturn(this, (HeaderSlide.__proto__ || Object.getPrototypeOf(HeaderSlide)).call(this, props));
 	}
 
 	_createClass(HeaderSlide, [{
@@ -207,6 +198,11 @@ var HeaderSlide = function (_React$Component) {
 
 	return HeaderSlide;
 }(_react2.default.Component());
+
+HeaderSlide.defaultProps = {
+	sectionLeft: {},
+	sectionRight: {}
+};
 
 exports.default = HeaderSlide;
 

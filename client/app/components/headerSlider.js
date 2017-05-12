@@ -1,7 +1,7 @@
 import React from 'react';
 import Slide from './headerSlide';
 
-export default class HeaderSlider extends React.Component {
+class HeaderSlider extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -10,10 +10,6 @@ export default class HeaderSlider extends React.Component {
 		this.state = {
 			section: 0
 		};
-
-		this.props = {
-			slides: []
-		}
 	}
 
 	changeSlide() {
@@ -33,3 +29,7 @@ export default class HeaderSlider extends React.Component {
 		)
 	}
 }
+
+HeaderSlider.defaultProps = {	slides: []};
+
+export default HeaderSlider;
