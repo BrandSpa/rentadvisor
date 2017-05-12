@@ -183,7 +183,7 @@ var HeaderSlide = function (_React$Component) {
 
 			return _react2.default.createElement(
 				"div",
-				{ className: "row" },
+				{ className: "" },
 				_react2.default.createElement(
 					"div",
 					{ style: sectionLeft, className: "col-lg-5" },

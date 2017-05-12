@@ -16,11 +16,12 @@ class HeaderSlide extends React.Component {
 			background: this.props.sectionRight.bg
 		};
 
-			return (
-				<div className="row">
+		return (
+				<div className="">
 					<div style={sectionLeft} className="col-lg-5">
 						<div dangerouslySetInnerHTML={{__html: this.props.sectionLeft.content}}  />
 					</div>
+
 					<div style={sectionRight}  className="col-lg-7">
 						<img src={this.props.sectionRight.img} alt=""/>
 					</div>
