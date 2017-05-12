@@ -12,8 +12,14 @@ function bs_render($template_file, $data = []) {
 	$render_shortcode = new Twig_SimpleFilter('render_shortcode', function ($string) {
     return do_shortcode($string);
 	}, array('is_safe' => array('html')));
-	
+
 	$twig->addFilter($render_shortcode);
+
+	$get_url = new Twig_SimpleFilter('get_url', function($string) {
+		return get_template_directory_uri() . $string;
+	});
+	
+	$twig->addFilter($get_url);
 
 	$template = $twig->load($template_file);
 
