@@ -32,8 +32,12 @@ $green_lime: #99FF79;
 $green_pastel: #5DE87B;
 $green_emerald: #43CD7F;
 
-*, *:before, *:after {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
