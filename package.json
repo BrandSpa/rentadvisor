@@ -13,6 +13,7 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "flexboxgrid-sass": "^8.0.5",
+    "normalize.css": "^7.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-multiple-render": "^1.0.8"

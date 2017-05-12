@@ -3,7 +3,7 @@
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <?php the_content() ?>
 
-    <div 
+  <div 
       class="bs-headerslider" 
       data-props='{"slides": [
         {
@@ -16,7 +16,7 @@
         }
       ]}'
     >
-    </div>
+  </div>
 
   <?php endwhile; else : ?>
     <h1> <?php echo '404' ?> </h1>
