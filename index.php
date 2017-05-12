@@ -8,10 +8,10 @@
       data-props='{"slider": [
         {
           "sectionLeft": {
-            "bg": '#27E5FB'
+            "bg": "#27E5FB"
           },
           "sectionRight": {
-            "bg": '#295AB7'
+            "bg": "#295AB7"
           }
         }
       ]}'
