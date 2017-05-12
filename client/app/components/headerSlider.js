@@ -4,7 +4,8 @@ import Slide from './headerSlide';
 class HeaderSlider extends React.Component {
 
 	constructor(props) {
-		super(props);
+		Super(props);
+
 		this.changeSlide = this.changeSlide.bind(this);
 
 		this.state = {
@@ -30,6 +31,6 @@ class HeaderSlider extends React.Component {
 	}
 }
 
-HeaderSlider.defaultProps = {	slides: []};
+HeaderSlider.defaultProps = {	slides: [] };
 
 export default HeaderSlider;

@@ -2,7 +2,7 @@ import React from 'react';
 
 class HeaderSlide extends React.Component () {
 	constructor(props) {
-		super(props);
+		Super(props);
 	}
 
 	render() {
