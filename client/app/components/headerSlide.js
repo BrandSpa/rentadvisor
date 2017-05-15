@@ -24,7 +24,8 @@ class HeaderSlide extends React.Component {
 
 		let sectionRight = {
 			height: this.props.height,
-			background: this.props.sectionRight.bg
+			background: this.props.sectionRight.bg,
+			overflow: 'hidden'
 		};
 
 		return (

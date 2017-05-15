@@ -216,7 +216,8 @@ var HeaderSlide = function (_React$Component) {
 
 			var sectionRight = {
 				height: this.props.height,
-				background: this.props.sectionRight.bg
+				background: this.props.sectionRight.bg,
+				overflow: 'hidden'
 			};
 
 			return _react2.default.createElement(
