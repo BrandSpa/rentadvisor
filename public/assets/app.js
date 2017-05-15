@@ -49,7 +49,7 @@ var HeaderSlider = function (_React$Component) {
 	_createClass(HeaderSlider, [{
 		key: 'changeSlide',
 		value: function changeSlide(i, e) {
-			console.log(i, e);
+			this.setState({ section: i });
 		}
 	}, {
 		key: 'render',
@@ -59,7 +59,8 @@ var HeaderSlider = function (_React$Component) {
 			var h = window.innerHeight;
 			var w = this.props.slides.length * 100 + '%';
 			var slideW = 100 / this.props.slides.length + '%';
-			var sectionContainer = { height: h, transition: 'top 300ms', top: 0 };
+			var t = this.state.section * h;
+			var sectionContainer = { height: h, position: 'relative', transition: 'top 300ms', top: '-' + t + 'px' };
 
 			return _react2.default.createElement(
 				'div',
@@ -73,7 +74,7 @@ var HeaderSlider = function (_React$Component) {
 				),
 				_react2.default.createElement(
 					'div',
-					{ style: { position: 'absolute', right: '0' } },
+					{ style: { position: 'absolute', right: '0', bottom: '0' } },
 					this.props.slides.map(function (slide, i) {
 						return _react2.default.createElement(
 							'button',
