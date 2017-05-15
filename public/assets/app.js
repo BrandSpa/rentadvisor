@@ -199,7 +199,7 @@ var HeaderSlide = function (_React$Component) {
 				var top = _this2.slide.getBoundingClientRect().top;
 				var h = _this2.slide.clientHeight;
 				var offset = document.body.scrollTop - _this2.slide.scrollTop;
-				var windowHeight = document.body.scrollTop;
+				var windowHeight = window.innerHeight;
 
 				console.log(offset, -offset * 100, offset * 100 / windowHeight);
 
