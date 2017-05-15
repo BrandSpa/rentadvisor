@@ -202,7 +202,7 @@ var HeaderSlide = function (_React$Component) {
 				if (top > 0 && top < h) {
 					var mov = h - document.body.scrollTop - h;
 
-					console.log(top - h + h);
+					console.log(top - h + (h - 120));
 					_this2.img.style.transition = 'all 300ms';
 					_this2.img.style.transform = 'translateY(' + mov + 'px)';
 				}
