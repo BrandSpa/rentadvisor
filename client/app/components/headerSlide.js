@@ -17,7 +17,7 @@ class HeaderSlide extends React.Component {
 		};
 
 		return (
-			<div >
+			<div style={{width: slideW}}>
 				<div className="row">
 					<div style={sectionLeft} className="col-lg-5">
 						<div dangerouslySetInnerHTML={{__html: this.props.sectionLeft.content}}  />

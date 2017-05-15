@@ -54,13 +54,14 @@ var HeaderSlider = function (_React$Component) {
 		value: function render() {
 			var h = window.innerHeight;
 			var w = this.props.slides.length * 100 + '%';
+			var slideW = this.props.slides.length / 100 + '%';
 			var sectionContainer = { height: h, width: w };
 
 			return _react2.default.createElement(
 				'div',
 				{ style: sectionContainer },
 				this.props.slides.map(function (slide, i) {
-					return _react2.default.createElement(_headerSlide2.default, _extends({ key: i }, slide, { height: h }));
+					return _react2.default.createElement(_headerSlide2.default, _extends({ key: i }, slide, { height: h, width: slideW }));
 				})
 			);
 		}
@@ -184,7 +185,7 @@ var HeaderSlide = function (_React$Component) {
 
 			return _react2.default.createElement(
 				"div",
-				null,
+				{ style: { width: slideW } },
 				_react2.default.createElement(
 					"div",
 					{ className: "row" },
