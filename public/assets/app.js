@@ -193,7 +193,7 @@ var HeaderSlide = function (_React$Component) {
 	_createClass(HeaderSlide, [{
 		key: 'componentDidMount',
 		value: function componentDidMount() {
-			console.log('img', this.img);
+			console.log('img', this.img.width);
 		}
 	}, {
 		key: 'render',

@@ -6,7 +6,7 @@ class HeaderSlide extends React.Component {
 	}
 	
 	componentDidMount() {
-		console.log('img', this.img);
+		console.log('img', this.img.width);
 	}
 
 	render() {
