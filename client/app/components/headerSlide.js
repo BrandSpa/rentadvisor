@@ -4,6 +4,10 @@ class HeaderSlide extends React.Component {
 	constructor(props) {
 		super(props);
 	}
+	
+	componentDidMount() {
+		console.log('img', this.img);
+	}
 
 	render() {
 		let sectionLeft = {
@@ -23,7 +27,7 @@ class HeaderSlide extends React.Component {
 					</div>
 
 					<div style={sectionRight}  className={this.props.sectionRight.col}>
-						<img src={this.props.sectionRight.img} style={{maxWidth: "100%"}}/>
+						<img ref={img => this.img = img} src={this.props.sectionRight.img} style={{maxWidth: "100%"}}/>
 					</div>
 			</div>
 		)

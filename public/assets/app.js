@@ -191,8 +191,15 @@ var HeaderSlide = function (_React$Component) {
 	}
 
 	_createClass(HeaderSlide, [{
-		key: "render",
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			console.log('img', this.img);
+		}
+	}, {
+		key: 'render',
 		value: function render() {
+			var _this2 = this;
+
 			var sectionLeft = {
 				height: this.props.height,
 				background: this.props.sectionLeft.bg
@@ -204,17 +211,19 @@ var HeaderSlide = function (_React$Component) {
 			};
 
 			return _react2.default.createElement(
-				"div",
-				{ className: "row" },
+				'div',
+				{ className: 'row' },
 				_react2.default.createElement(
-					"div",
+					'div',
 					{ style: sectionLeft, className: this.props.sectionLeft.col },
-					_react2.default.createElement("div", { dangerouslySetInnerHTML: { __html: this.props.sectionLeft.content } })
+					_react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: this.props.sectionLeft.content } })
 				),
 				_react2.default.createElement(
-					"div",
+					'div',
 					{ style: sectionRight, className: this.props.sectionRight.col },
-					_react2.default.createElement("img", { src: this.props.sectionRight.img, style: { maxWidth: "100%" } })
+					_react2.default.createElement('img', { ref: function ref(img) {
+							return _this2.img = img;
+						}, src: this.props.sectionRight.img, style: { maxWidth: "100%" } })
 				)
 			);
 		}
