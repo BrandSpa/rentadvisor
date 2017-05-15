@@ -185,7 +185,7 @@ var HeaderSlide = function (_React$Component) {
 
 			return _react2.default.createElement(
 				"div",
-				{ style: { width: slideW } },
+				{ style: { width: this.props.slideW } },
 				_react2.default.createElement(
 					"div",
 					{ className: "row" },
