@@ -18,11 +18,11 @@ class HeaderSlide extends React.Component {
 
 		return (
 			<div className="row" style={{width: this.props.width, float: 'left'}}>
-					<div style={sectionLeft} className="col-lg-5">
+					<div style={sectionLeft} className={this.props.sectionLeft.col}>
 						<div dangerouslySetInnerHTML={{__html: this.props.sectionLeft.content}}  />
 					</div>
 
-					<div style={sectionRight}  className="col-lg-7">
+					<div style={sectionRight}  className={this.props.sectionRight.col}>
 						<img src={this.props.sectionRight.img} style={{maxWidth: "100%"}}/>
 					</div>
 			</div>

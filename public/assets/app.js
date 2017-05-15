@@ -192,12 +192,12 @@ var HeaderSlide = function (_React$Component) {
 				{ className: 'row', style: { width: this.props.width, float: 'left' } },
 				_react2.default.createElement(
 					'div',
-					{ style: sectionLeft, className: 'col-lg-5' },
+					{ style: sectionLeft, className: this.props.sectionLeft.col },
 					_react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: this.props.sectionLeft.content } })
 				),
 				_react2.default.createElement(
 					'div',
-					{ style: sectionRight, className: 'col-lg-7' },
+					{ style: sectionRight, className: this.props.sectionRight.col },
 					_react2.default.createElement('img', { src: this.props.sectionRight.img, style: { maxWidth: "100%" } })
 				)
 			);

@@ -8,20 +8,24 @@
       data-props='{"slides": [
         {
           "sectionLeft": {
-            "bg": "#27E5FB"
+            "bg": "#27E5FB",
+            "col": "col-lg-5"
           },
           "sectionRight": {
             "bg": "#295AB7",
-            "img": "<?php echo get_template_directory_uri() ?>/public/img/woman.png" 
+            "img": "<?php echo get_template_directory_uri() ?>/public/img/woman.png",
+            "col": "col-lg-7"
           }
         },
          {
           "sectionLeft": {
-            "bg": "#5D31B5"
+            "bg": "#5D31B5",
+            "col": "col-lg-4"
           },
           "sectionRight": {
             "bg": "#322365",
-            "img": "<?php echo get_template_directory_uri() ?>/public/img/laptop.png" 
+            "img": "<?php echo get_template_directory_uri() ?>/public/img/laptop.png",
+            "col": "col-lg-8" 
           }
         }
       ]}'
