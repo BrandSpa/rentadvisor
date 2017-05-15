@@ -21,7 +21,7 @@ class HeaderSlider extends React.Component {
 		const h = window.innerHeight;
 		const w = this.props.slides.length * 100 + '%';
 		const slideW = 100 / this.props.slides.length + '%';
-		const sectionContainer = { height: h, width: w };
+		const sectionContainer = { height: h};
 		
 		return (
 			<div style={{overflow: 'hidden', width: '100%', height: h}}>

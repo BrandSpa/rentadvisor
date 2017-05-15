@@ -55,7 +55,7 @@ var HeaderSlider = function (_React$Component) {
 			var h = window.innerHeight;
 			var w = this.props.slides.length * 100 + '%';
 			var slideW = 100 / this.props.slides.length + '%';
-			var sectionContainer = { height: h, width: w };
+			var sectionContainer = { height: h };
 
 			return _react2.default.createElement(
 				'div',
@@ -175,7 +175,7 @@ var HeaderSlide = function (_React$Component) {
 	}
 
 	_createClass(HeaderSlide, [{
-		key: 'render',
+		key: "render",
 		value: function render() {
 			var sectionLeft = {
 				height: this.props.height,
@@ -188,17 +188,17 @@ var HeaderSlide = function (_React$Component) {
 			};
 
 			return _react2.default.createElement(
-				'div',
-				{ className: 'row', style: { width: this.props.width, float: 'left' } },
+				"div",
+				{ className: "row" },
 				_react2.default.createElement(
-					'div',
+					"div",
 					{ style: sectionLeft, className: this.props.sectionLeft.col },
-					_react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: this.props.sectionLeft.content } })
+					_react2.default.createElement("div", { dangerouslySetInnerHTML: { __html: this.props.sectionLeft.content } })
 				),
 				_react2.default.createElement(
-					'div',
+					"div",
 					{ style: sectionRight, className: this.props.sectionRight.col },
-					_react2.default.createElement('img', { src: this.props.sectionRight.img, style: { maxWidth: "100%" } })
+					_react2.default.createElement("img", { src: this.props.sectionRight.img, style: { maxWidth: "100%" } })
 				)
 			);
 		}
