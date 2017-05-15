@@ -12,7 +12,7 @@ class HeaderSlide extends React.Component {
 			let h = this.slide.clientHeight;
 
 			if( top > 0 && top < h) {
-				let mov = (h - document.body.scrollTop) / 2;
+				let mov = (h - document.body.scrollTop) - h;
 
 				console.log(mov, h - top);
 				this.img.style.transition = 'all 300ms';
