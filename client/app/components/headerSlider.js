@@ -19,15 +19,16 @@ class HeaderSlider extends React.Component {
 
 	render() {
 		const h = window.innerHeight;
-		const sectionContainer = { height: h };
-
+		const w = this.props.slides.length * 100 + '%';
+		const sectionContainer = { height: h, width: w };
+		
 		return (
 			<div style={sectionContainer}>
-				<div className="row">
+			
 					{this.props.slides.map((slide, i) => {
 						return (<Slide key={i} {...slide} height={h} />)
 					}) }
-				</div>
+				
 			</div>
 		)
 	}
