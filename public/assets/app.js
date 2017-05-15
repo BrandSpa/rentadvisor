@@ -52,6 +52,7 @@ var HeaderSlider = function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
+			å;
 			var h = window.innerHeight;
 			var sectionContainer = { height: h };
 
@@ -192,7 +193,7 @@ var HeaderSlide = function (_React$Component) {
 				_react2.default.createElement(
 					"div",
 					{ style: sectionRight, className: "col-lg-7" },
-					_react2.default.createElement("img", { src: this.props.sectionRight.img, alt: "" })
+					_react2.default.createElement("img", { src: this.props.sectionRight.img, style: { maxWidth: "100%" } })
 				)
 			);
 		}
