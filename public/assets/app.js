@@ -200,13 +200,13 @@ var HeaderSlide = function (_React$Component) {
 			window.addEventListener('scroll', function (e) {
 				var top = _this2.slide.getBoundingClientRect().top;
 				if (top > 0 && top < _this2.slide.clientHeight) {
-					mov = mov + 10;
+					mov = mov + 2;
 					console.log(mov);
 					_this2.img.style.transition = 'all 300ms';
 					_this2.img.style.transform = 'translateY(' + mov + 'px)';
 				}
 
-				if (top > _this2.slide.clientHeight) {
+				if (top < 0) {
 					console.log('pass');
 					mov = 0;
 				}
