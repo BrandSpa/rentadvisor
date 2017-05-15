@@ -11,7 +11,8 @@
         {
           "sectionLeft": {
             "bg": "#27E5FB",
-            "col": "col-lg-5"
+            "col": "col-lg-5",
+            "content": "<div><h1>Title</h1><p>Some paragraph</p></div>"
           },
           "sectionRight": {
             "bg": "#295AB7",
@@ -22,7 +23,8 @@
          {
           "sectionLeft": {
             "bg": "#5D31B5",
-            "col": "col-lg-4"
+            "col": "col-lg-4",
+            "content": "<div><h1>Title</h1><p>Some paragraph</p></div>"
           },
           "sectionRight": {
             "bg": "#322365",
