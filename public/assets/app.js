@@ -52,7 +52,6 @@ var HeaderSlider = function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
-			å;
 			var h = window.innerHeight;
 			var sectionContainer = { height: h };
 
