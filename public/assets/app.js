@@ -196,7 +196,8 @@ var HeaderSlide = function (_React$Component) {
 			var _this2 = this;
 
 			window.addEventListener('scroll', function (e) {
-				if (_this2.slide.getBoundingClientRect() > 0 && _this2.slide.getBoundingClientRect() < _this2.img.clientHeight) {
+				var top = _this2.slide.getBoundingClientRect().top;
+				if (top > 0 && top < _this2.slide.clientHeight) {
 					console.log('inside');
 				}
 			});
