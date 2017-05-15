@@ -202,6 +202,7 @@ var HeaderSlide = function (_React$Component) {
 				var windowHeight = window.innerHeight;
 
 				if (top > 0 && top < h) {
+					console.log('inside bounding');
 					Velocity(_this2.img, { translateY: offset }, 0);
 				}
 			});

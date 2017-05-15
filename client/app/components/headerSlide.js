@@ -12,8 +12,9 @@ class HeaderSlide extends React.Component {
 			let h = this.slide.clientHeight;
 			let offset = document.body.scrollTop - this.slide.scrollTop;
 			let windowHeight =  window.innerHeight;
-			
+
 			if (top > 0 && top < h) { 
+				console.log('inside bounding');
 				Velocity(this.img, { translateY: offset }, 0);
 			}
 			
