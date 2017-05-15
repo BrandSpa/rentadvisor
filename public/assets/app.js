@@ -58,9 +58,13 @@ var HeaderSlider = function (_React$Component) {
 			return _react2.default.createElement(
 				'div',
 				{ style: sectionContainer },
-				this.props.slides.map(function (slide, i) {
-					return _react2.default.createElement(_headerSlide2.default, _extends({ key: i }, slide, { height: h }));
-				})
+				_react2.default.createElement(
+					'div',
+					{ className: 'row' },
+					this.props.slides.map(function (slide, i) {
+						return _react2.default.createElement(_headerSlide2.default, _extends({ key: i }, slide, { height: h }));
+					})
+				)
 			);
 		}
 	}]);
@@ -183,7 +187,7 @@ var HeaderSlide = function (_React$Component) {
 
 			return _react2.default.createElement(
 				"div",
-				{ className: "row" },
+				null,
 				_react2.default.createElement(
 					"div",
 					{ style: sectionLeft, className: "col-lg-5" },
