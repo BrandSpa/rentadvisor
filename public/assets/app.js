@@ -191,7 +191,10 @@ var HeaderSlide = function (_React$Component) {
 	function HeaderSlide(props) {
 		_classCallCheck(this, HeaderSlide);
 
-		return _possibleConstructorReturn(this, (HeaderSlide.__proto__ || Object.getPrototypeOf(HeaderSlide)).call(this, props));
+		var _this = _possibleConstructorReturn(this, (HeaderSlide.__proto__ || Object.getPrototypeOf(HeaderSlide)).call(this, props));
+
+		_this.moveImage = _this.moveImage.bind(_this);
+		return _this;
 	}
 
 	_createClass(HeaderSlide, [{

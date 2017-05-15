@@ -4,10 +4,9 @@ import Velocity from 'velocity-animate';
 class HeaderSlide extends React.Component {
 	constructor(props) {
 		super(props);
+		this.moveImage = this.moveImage.bind(this);
 	}
 
-	
-	
 	componentDidMount() {
 		window.addEventListener('scroll', this.scrollAnimation);
 	}
