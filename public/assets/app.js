@@ -195,15 +195,14 @@ var HeaderSlide = function (_React$Component) {
 		value: function componentDidMount() {
 			var _this2 = this;
 
-			var mov = 0;
-
 			window.addEventListener('scroll', function (e) {
 				var top = _this2.slide.getBoundingClientRect().top;
 				var h = _this2.slide.clientHeight;
 
 				if (top > 0 && top < h) {
-					mov = mov + 5;
-					console.log(h - document.body.scrollTop, h - top);
+					mov = h - document.body.scrollTop;
+
+					console.log(h - top);
 					_this2.img.style.transition = 'all 300ms';
 					_this2.img.style.transform = 'translateY(' + mov + 'px)';
 				}
