@@ -39,7 +39,7 @@ class HeaderSlide extends React.Component {
 					</div>
 
 					<div  style={sectionRight}  className={this.props.sectionRight.col}>
-						<img ref={img => this.img = img} src={this.props.sectionRight.img} style={{maxWidth: "100%"}}/>
+						<img ref={img => this.img = img} src={this.props.sectionRight.img} style={{maxWidth: "100%", position: 'relative', left: '-200px'}}/>
 					</div>
 			</div>
 		)

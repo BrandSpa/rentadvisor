@@ -237,7 +237,7 @@ var HeaderSlide = function (_React$Component) {
 					{ style: sectionRight, className: this.props.sectionRight.col },
 					_react2.default.createElement('img', { ref: function ref(img) {
 							return _this3.img = img;
-						}, src: this.props.sectionRight.img, style: { maxWidth: "100%" } })
+						}, src: this.props.sectionRight.img, style: { maxWidth: "100%", position: 'relative', left: '-200px' } })
 				)
 			);
 		}
