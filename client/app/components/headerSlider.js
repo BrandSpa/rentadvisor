@@ -17,7 +17,7 @@ class HeaderSlider extends React.Component {
 
 	}
 
-	render() {
+	render() {å
 		const h = window.innerHeight;
 		const sectionContainer = { height: h };
 

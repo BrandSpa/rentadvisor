@@ -11,7 +11,8 @@
             "bg": "#27E5FB"
           },
           "sectionRight": {
-            "bg": "#295AB7"
+            "bg": "#295AB7",
+            "img": "<?php echo get_template_directory_uri() ?>/public/img/woman.png" 
           }
         }
       ]}'
