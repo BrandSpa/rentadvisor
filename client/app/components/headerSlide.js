@@ -1,4 +1,5 @@
 import React from 'react';
+import Velocity from 'velocity-animate';
 
 class HeaderSlide extends React.Component {
 	constructor(props) {
@@ -12,14 +13,7 @@ class HeaderSlide extends React.Component {
 			let h = this.slide.clientHeight;
 			let offset = document.body.scrollTop - this.slide.scrollTop;
 			let windowHeight =  window.innerHeight;
-
-			if( top > 0 && top < h) {
-				let mov = (-offset) * 100 / windowHeight;
-				console.log(mov);
-				this.img.style.transition = 'all 300ms';
-				this.img.style.transform = `translateY(${mov}px)`;
-			}
-
+			Velocity(this.img, { translateY: offset }, 1000);
 		});
 	}
 

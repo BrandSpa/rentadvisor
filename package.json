@@ -18,7 +18,8 @@
     "normalize.css": "^7.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-multiple-render": "^1.0.8"
+    "react-multiple-render": "^1.0.8",
+    "velocity-animate": "^1.5.0"
   },
   "devDependencies": {
     "babel": "^6.23.0",
