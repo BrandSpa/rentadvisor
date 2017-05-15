@@ -59,7 +59,7 @@ var HeaderSlider = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'div',
-				{ style: { overflow: 'hidden' } },
+				{ style: { overflow: 'hidden', width: '100%', height: h } },
 				_react2.default.createElement(
 					'div',
 					{ style: sectionContainer },
