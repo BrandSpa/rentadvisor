@@ -19,7 +19,7 @@
             "bg": "#295AB7",
             "img": "<?php echo get_template_directory_uri() ?>/public/img/woman.png",
             "col": "col-lg-7",
-            "width": "800px"
+            "width": "600px"
           }
         },
          {
@@ -31,7 +31,8 @@
           "sectionRight": {
             "bg": "#322365",
             "img": "<?php echo get_template_directory_uri() ?>/public/img/laptop.png",
-            "col": "col-lg-8" 
+            "col": "col-lg-8",
+            "width": "600px"
           }
         }
       ]}'
