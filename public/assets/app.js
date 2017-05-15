@@ -200,7 +200,7 @@ var HeaderSlide = function (_React$Component) {
 				if (top > 0 && top < _this2.slide.clientHeight) {
 					console.log('inside', top, top / 2 - 60);
 					_this2.img.style.transition = 'all 300ms';
-					_this2.img.style.transform = 'translateY(-' + top + 'px)';
+					_this2.img.style.transform = 'translateY(' + top + 'px)';
 				}
 			});
 		}

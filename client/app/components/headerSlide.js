@@ -11,7 +11,7 @@ class HeaderSlide extends React.Component {
 			if( top > 0 && top < this.slide.clientHeight) {
 				console.log('inside', top, (top / 2) - 60 );
 				this.img.style.transition = 'all 300ms';
-				this.img.style.transform = `translateY(-${top}px)`;
+				this.img.style.transform = `translateY(${top}px)`;
 			}
 		});
 	}
