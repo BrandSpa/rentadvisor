@@ -24,14 +24,14 @@ class HeaderSlider extends React.Component {
 		const sectionContainer = { height: h, transition: 'top 300ms', top: 0};
 		
 		return (
-			<div style={{overflow: 'hidden', width: '100%', height: h}}>
+			<div style={{overflow: 'hidden', width: '100%', height: h, position: 'relative'}}>
 				<div style={sectionContainer}>
 						{this.props.slides.map((slide, i) => {
 							return (<Slide key={i} {...slide} height={h} width={slideW} />)
 						}) }
 				</div>
 				<div>
-					{this.props.slides.map((slide, i) => <button onClick={this.changeSlide.bind(null, i)}>next</button>)}
+					{this.props.slides.map((slide, i) => <button style={{position: 'absolute', right: '0', color: 'red', width: '100px', height: '90px'}} onClick={this.changeSlide.bind(null, i)}>next</button>)}
 				</div>
 			</div>
 		)
