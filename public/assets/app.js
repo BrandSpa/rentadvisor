@@ -198,7 +198,9 @@ var HeaderSlide = function (_React$Component) {
 			window.addEventListener('scroll', function (e) {
 				var top = _this2.slide.getBoundingClientRect().top;
 				if (top > 0 && top < _this2.slide.clientHeight) {
-					console.log('inside', top, top / 2);
+					console.log('inside', top, top / 2 - 60);
+					_this2.img.style.transition = 'all 300ms';
+					_this2.img.style.transform = 'translateY(-' + top + 'px)';
 				}
 			});
 		}
@@ -219,7 +221,7 @@ var HeaderSlide = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'div',
-				{ className: 'row', ref: function ref(slide) {
+				{ className: 'row', style: { transition: 'all 300ms' }, ref: function ref(slide) {
 						return _this3.slide = slide;
 					} },
 				_react2.default.createElement(

@@ -9,7 +9,9 @@ class HeaderSlide extends React.Component {
 		window.addEventListener('scroll', e => {
 			let top = this.slide.getBoundingClientRect().top;
 			if( top > 0 && top < this.slide.clientHeight) {
-				console.log('inside', top, top / 2);
+				console.log('inside', top, (top / 2) - 60 );
+				this.img.style.transition = 'all 300ms';
+				this.img.style.transform = `translateY(-${top}px)`;
 			}
 		});
 	}
@@ -26,7 +28,7 @@ class HeaderSlide extends React.Component {
 		};
 
 		return (
-			<div className="row" ref={slide => this.slide = slide}>
+			<div className="row" style={{transition: 'all 300ms'}} ref={slide => this.slide = slide}>
 					<div style={sectionLeft} className={this.props.sectionLeft.col}>
 						<div dangerouslySetInnerHTML={{__html: this.props.sectionLeft.content}}  />
 					</div>
