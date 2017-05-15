@@ -189,7 +189,7 @@ var HeaderSlide = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'div',
-				{ style: { width: this.props.width, float: 'left' } },
+				{ className: 'row', style: { width: this.props.width, float: 'left' } },
 				_react2.default.createElement(
 					'div',
 					{ style: sectionLeft, className: 'col-lg-5' },
