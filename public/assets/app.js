@@ -59,10 +59,14 @@ var HeaderSlider = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'div',
-				{ style: sectionContainer },
-				this.props.slides.map(function (slide, i) {
-					return _react2.default.createElement(_headerSlide2.default, _extends({ key: i }, slide, { height: h, width: slideW }));
-				})
+				{ style: { overflow: 'hidden' } },
+				_react2.default.createElement(
+					'div',
+					{ style: sectionContainer },
+					this.props.slides.map(function (slide, i) {
+						return _react2.default.createElement(_headerSlide2.default, _extends({ key: i }, slide, { height: h, width: slideW }));
+					})
+				)
 			);
 		}
 	}]);
