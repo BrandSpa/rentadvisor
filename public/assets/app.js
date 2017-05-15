@@ -204,7 +204,7 @@ var HeaderSlide = function (_React$Component) {
 				var h = _this2.slide.clientHeight;
 				var offset = document.body.scrollTop - _this2.slide.scrollTop;
 				var windowHeight = window.innerHeight;
-				(0, _velocityAnimate2.default)(_this2.img, { translateY: offset }, 1000);
+				(0, _velocityAnimate2.default)(_this2.img, { translateY: offset }, 300);
 			});
 		}
 	}, {
