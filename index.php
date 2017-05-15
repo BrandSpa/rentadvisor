@@ -12,13 +12,14 @@
           "sectionLeft": {
             "bg": "#27E5FB",
             "col": "col-lg-5",
-            "content": "<div><h1>Title</h1><p>Some paragraph</p></div>",
+            "content": "<div><h1>Title</h1><p>Some paragraph</p></div>"
+
           },
           "sectionRight": {
             "bg": "#295AB7",
             "img": "<?php echo get_template_directory_uri() ?>/public/img/woman.png",
-            "width": "800px",
-            "col": "col-lg-7"
+            "col": "col-lg-7",
+            "width": "800px"
           }
         },
          {
