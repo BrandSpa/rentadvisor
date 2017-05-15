@@ -194,6 +194,7 @@ var HeaderSlide = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, (HeaderSlide.__proto__ || Object.getPrototypeOf(HeaderSlide)).call(this, props));
 
 		_this.moveImage = _this.moveImage.bind(_this);
+		_this.scrollAnimation = _this.scrollAnimation.bind(_this);
 		return _this;
 	}
 

@@ -5,6 +5,7 @@ class HeaderSlide extends React.Component {
 	constructor(props) {
 		super(props);
 		this.moveImage = this.moveImage.bind(this);
+		this.scrollAnimation = this.scrollAnimation.bind(this);
 	}
 
 	componentDidMount() {
