@@ -20,7 +20,7 @@
             "bg": "#5D31B5"
           },
           "sectionRight": {
-            "bg": "##322365",
+            "bg": "#322365",
             "img": "<?php echo get_template_directory_uri() ?>/public/img/laptop.png" 
           }
         }
