@@ -11,14 +11,13 @@ class HeaderSlide extends React.Component {
 		window.addEventListener('scroll', e => {
 			let top = this.slide.getBoundingClientRect().top;
 			if( top > 0 && top < this.slide.clientHeight) {
-				mov = mov + 2;
-				console.log(mov);
+				mov = mov + 5;
+				console.log(e, top, mov);
 				this.img.style.transition = 'all 300ms';
 				this.img.style.transform = `translateY(${mov}px)`;
 			}
 
-			if(top < 0) {
-				console.log('pass');
+			if(top == 0) {
 				mov = 0;
 			}
 
