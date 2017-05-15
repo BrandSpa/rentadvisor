@@ -7,7 +7,9 @@ class HeaderSlide extends React.Component {
 	
 	componentDidMount() {
 		window.addEventListener('scroll', e => {
-			console.log(this.slide.getBoundingClientRect());
+			if(this.slide.getBoundingClientRect() > 0 && this.slide.getBoundingClientRect() < this.img.clientHeight) {
+				console.log('inside');
+			}
 		});
 	}
 

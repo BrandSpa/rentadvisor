@@ -196,7 +196,9 @@ var HeaderSlide = function (_React$Component) {
 			var _this2 = this;
 
 			window.addEventListener('scroll', function (e) {
-				console.log(_this2.slide.getBoundingClientRect());
+				if (_this2.slide.getBoundingClientRect() > 0 && _this2.slide.getBoundingClientRect() < _this2.img.clientHeight) {
+					console.log('inside');
+				}
 			});
 		}
 	}, {
