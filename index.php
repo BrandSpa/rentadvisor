@@ -39,4 +39,5 @@
   <?php endif; ?>
 </div>
 
+<div id="footer" style="height: 400px; width: 100%; background: purple"></div>
 <?php get_footer() ?>
