@@ -201,7 +201,7 @@ var HeaderSlide = function (_React$Component) {
 				var offset = document.body.scrollTop - _this2.slide.scrollTop;
 				var windowHeight = document.body.scrollTop;
 
-				console.log(offset, -offset * 100, -offset * 100 / windowHeight);
+				console.log(offset, -offset * 100, offset * 100 / windowHeight);
 
 				if (top > 0 && top < h) {
 					var mov = Math.abs(top - h + (h - 120)); //(h - document.body.scrollTop) - h;

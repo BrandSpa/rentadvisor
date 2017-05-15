@@ -13,7 +13,7 @@ class HeaderSlide extends React.Component {
 			let offset = document.body.scrollTop - this.slide.scrollTop;
 			let windowHeight = document.body.scrollTop;
 
-			console.log(offset, (-offset) * 100, (-offset) * 100 / windowHeight);
+			console.log(offset, (-offset) * 100, (offset) * 100 / windowHeight);
 
 			if( top > 0 && top < h) {
 				let mov = Math.abs((top - h) + (h - 120)); //(h - document.body.scrollTop) - h;
