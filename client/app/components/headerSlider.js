@@ -13,15 +13,15 @@ class HeaderSlider extends React.Component {
 		};
 	}
 
-	changeSlide() {
-
+	changeSlide(i, e) {
+		console.log(i, e);
 	}
 
 	render() {
 		const h = window.innerHeight;
 		const w = this.props.slides.length * 100 + '%';
 		const slideW = 100 / this.props.slides.length + '%';
-		const sectionContainer = { height: h};
+		const sectionContainer = { height: h, transition: 'top 300ms', top: 0};
 		
 		return (
 			<div style={{overflow: 'hidden', width: '100%', height: h}}>
@@ -29,6 +29,9 @@ class HeaderSlider extends React.Component {
 						{this.props.slides.map((slide, i) => {
 							return (<Slide key={i} {...slide} height={h} width={slideW} />)
 						}) }
+				</div>
+				<div>
+					{this.props.slides.map((slide, i) => <button onClick={this.changeSlide.bind(null, i)}>next</button>)}
 				</div>
 			</div>
 		)
