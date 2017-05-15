@@ -202,7 +202,6 @@ var HeaderSlide = function (_React$Component) {
 				if (top > 0 && top < h) {
 					var mov = top - h + (h - 120); //(h - document.body.scrollTop) - h;
 
-					console.log();
 					_this2.img.style.transition = 'all 300ms';
 					_this2.img.style.transform = 'translateY(' + mov + 'px)';
 				}
@@ -220,13 +219,12 @@ var HeaderSlide = function (_React$Component) {
 
 			var sectionRight = {
 				height: this.props.height,
-				background: this.props.sectionRight.bg,
-				overflow: 'hidden'
+				background: this.props.sectionRight.bg
 			};
 
 			return _react2.default.createElement(
 				'div',
-				{ className: 'row', style: { transition: 'all 300ms' }, ref: function ref(slide) {
+				{ className: 'row', style: { transition: 'all 300ms', overflow: 'hidden' }, ref: function ref(slide) {
 						return _this3.slide = slide;
 					} },
 				_react2.default.createElement(

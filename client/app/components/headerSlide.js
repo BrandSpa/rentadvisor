@@ -14,7 +14,6 @@ class HeaderSlide extends React.Component {
 			if( top > 0 && top < h) {
 				let mov = (top - h) + (h - 120); //(h - document.body.scrollTop) - h;
 
-				console.log();
 				this.img.style.transition = 'all 300ms';
 				this.img.style.transform = `translateY(${mov}px)`;
 			}
@@ -30,12 +29,11 @@ class HeaderSlide extends React.Component {
 
 		let sectionRight = {
 			height: this.props.height,
-			background: this.props.sectionRight.bg,
-			overflow: 'hidden'
+			background: this.props.sectionRight.bg
 		};
 
 		return (
-			<div className="row" style={{transition: 'all 300ms'}} ref={slide => this.slide = slide}>
+			<div className="row" style={{transition: 'all 300ms', overflow: 'hidden'}} ref={slide => this.slide = slide}>
 					<div style={sectionLeft} className={this.props.sectionLeft.col}>
 						<div dangerouslySetInnerHTML={{__html: this.props.sectionLeft.content}}  />
 					</div>
