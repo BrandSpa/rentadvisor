@@ -207,6 +207,7 @@ var HeaderSlide = function (_React$Component) {
 				}
 
 				if (top < _this2.slide.clientHeight) {
+					console.log('pass');
 					mov = 0;
 				}
 			});

@@ -18,6 +18,7 @@ class HeaderSlide extends React.Component {
 			}
 
 			if(top < this.slide.clientHeight) {
+				console.log('pass');
 				mov = 0;
 			}
 
