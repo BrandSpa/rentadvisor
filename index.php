@@ -45,4 +45,5 @@
 <div id="footer" style="height: 400px; width: 100%; background: red"></div>
 <div id="footer" style="height: 400px; width: 100%; background: purple"></div>
 <div id="footer" style="height: 400px; width: 100%; background: red"></div>
+
 <?php get_footer() ?>
