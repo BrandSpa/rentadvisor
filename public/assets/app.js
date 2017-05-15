@@ -206,7 +206,7 @@ var HeaderSlide = function (_React$Component) {
 					_this2.img.style.transform = 'translateY(' + top + 'px)';
 				}
 
-				if (top < _this2.slide.clientHeight) {
+				if (top > _this2.slide.clientHeight) {
 					console.log('pass');
 					mov = 0;
 				}
