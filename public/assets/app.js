@@ -201,10 +201,8 @@ var HeaderSlide = function (_React$Component) {
 				var offset = document.body.scrollTop - _this2.slide.scrollTop;
 				var windowHeight = window.innerHeight;
 
-				console.log(offset, -offset * 100, offset * 100 / windowHeight);
-
 				if (top > 0 && top < h) {
-					var mov = Math.abs(top - h + (h - 120)); //(h - document.body.scrollTop) - h;
+					var mov = -offset * 100 / windowHeight;
 
 					_this2.img.style.transition = 'all 300ms';
 					_this2.img.style.transform = 'translateY(' + mov + 'px)';
