@@ -20,7 +20,7 @@ class HeaderSlider extends React.Component {
 	render() {
 		const h = window.innerHeight;
 		const w = this.props.slides.length * 100 + '%';
-		const slideW = this.props.slides.length / 100 + '%';
+		const slideW = 100 / this.props.slides.length + '%';
 		const sectionContainer = { height: h, width: w };
 		
 		return (

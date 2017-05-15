@@ -54,7 +54,7 @@ var HeaderSlider = function (_React$Component) {
 		value: function render() {
 			var h = window.innerHeight;
 			var w = this.props.slides.length * 100 + '%';
-			var slideW = this.props.slides.length / 100 + '%';
+			var slideW = 100 / this.props.slides.length + '%';
 			var sectionContainer = { height: h, width: w };
 
 			return _react2.default.createElement(
