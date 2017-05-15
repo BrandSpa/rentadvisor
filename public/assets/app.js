@@ -202,7 +202,7 @@ var HeaderSlide = function (_React$Component) {
 	}, {
 		key: 'scrollAnimation',
 		value: function scrollAnimation() {
-			!window.requestAnimationFrame ? this.moveImage() : window.requestAnimationFrame(moveImage);
+			!window.requestAnimationFrame ? this.moveImage() : window.requestAnimationFrame(this.moveImage);
 		}
 	}, {
 		key: 'moveImage',

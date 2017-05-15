@@ -13,7 +13,7 @@ class HeaderSlide extends React.Component {
 	}
 
 	scrollAnimation() {
-		(!window.requestAnimationFrame) ? this.moveImage() : window.requestAnimationFrame(moveImage);
+		(!window.requestAnimationFrame) ? this.moveImage() : window.requestAnimationFrame(this.moveImage);
 	}
 
 	moveImage() {
