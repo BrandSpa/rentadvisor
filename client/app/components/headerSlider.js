@@ -30,8 +30,8 @@ class HeaderSlider extends React.Component {
 							return (<Slide key={i} {...slide} height={h} width={slideW} />)
 						}) }
 				</div>
-				<div>
-					{this.props.slides.map((slide, i) => <button style={{position: 'absolute', right: '0', color: 'red', width: '100px', height: '90px'}} onClick={this.changeSlide.bind(null, i)}>next</button>)}
+				<div style={{position: 'absolute', right: '0'}}>
+					{this.props.slides.map((slide, i) => <button onClick={this.changeSlide.bind(null, i)}>next</button>)}
 				</div>
 			</div>
 		)

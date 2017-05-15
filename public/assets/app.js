@@ -73,11 +73,11 @@ var HeaderSlider = function (_React$Component) {
 				),
 				_react2.default.createElement(
 					'div',
-					null,
+					{ style: { position: 'absolute', right: '0' } },
 					this.props.slides.map(function (slide, i) {
 						return _react2.default.createElement(
 							'button',
-							{ style: { position: 'absolute', right: '0', color: 'red', width: '100px', height: '90px' }, onClick: _this2.changeSlide.bind(null, i) },
+							{ onClick: _this2.changeSlide.bind(null, i) },
 							'next'
 						);
 					})
