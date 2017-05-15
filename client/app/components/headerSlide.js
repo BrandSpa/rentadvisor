@@ -6,7 +6,9 @@ class HeaderSlide extends React.Component {
 	}
 	
 	componentDidMount() {
-		console.log('img', this.img.width);
+		window.addEventListener('scroll', e => {
+			console.log(this.slide.getBoundingClientRect());
+		});
 	}
 
 	render() {
@@ -21,12 +23,12 @@ class HeaderSlide extends React.Component {
 		};
 
 		return (
-			<div className="row">
+			<div className="row" ref={slide => this.slide = slide}>
 					<div style={sectionLeft} className={this.props.sectionLeft.col}>
 						<div dangerouslySetInnerHTML={{__html: this.props.sectionLeft.content}}  />
 					</div>
 
-					<div style={sectionRight}  className={this.props.sectionRight.col}>
+					<div  style={sectionRight}  className={this.props.sectionRight.col}>
 						<img ref={img => this.img = img} src={this.props.sectionRight.img} style={{maxWidth: "100%"}}/>
 					</div>
 			</div>

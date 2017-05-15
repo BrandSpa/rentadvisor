@@ -193,12 +193,16 @@ var HeaderSlide = function (_React$Component) {
 	_createClass(HeaderSlide, [{
 		key: 'componentDidMount',
 		value: function componentDidMount() {
-			console.log('img', this.img.width);
+			var _this2 = this;
+
+			window.addEventListener('scroll', function (e) {
+				console.log(_this2.slide.getBoundingClientRect());
+			});
 		}
 	}, {
 		key: 'render',
 		value: function render() {
-			var _this2 = this;
+			var _this3 = this;
 
 			var sectionLeft = {
 				height: this.props.height,
@@ -212,7 +216,9 @@ var HeaderSlide = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'div',
-				{ className: 'row' },
+				{ className: 'row', ref: function ref(slide) {
+						return _this3.slide = slide;
+					} },
 				_react2.default.createElement(
 					'div',
 					{ style: sectionLeft, className: this.props.sectionLeft.col },
@@ -222,7 +228,7 @@ var HeaderSlide = function (_React$Component) {
 					'div',
 					{ style: sectionRight, className: this.props.sectionRight.col },
 					_react2.default.createElement('img', { ref: function ref(img) {
-							return _this2.img = img;
+							return _this3.img = img;
 						}, src: this.props.sectionRight.img, style: { maxWidth: "100%" } })
 				)
 			);
