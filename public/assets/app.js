@@ -197,24 +197,30 @@ var HeaderSlide = function (_React$Component) {
 	_createClass(HeaderSlide, [{
 		key: 'componentDidMount',
 		value: function componentDidMount() {
-			var _this2 = this;
+			window.addEventListener('scroll', this.scrollAnimation);
+		}
+	}, {
+		key: 'scrollAnimation',
+		value: function scrollAnimation() {
+			!window.requestAnimationFrame ? this.moveImage() : window.requestAnimationFrame(moveImage);
+		}
+	}, {
+		key: 'moveImage',
+		value: function moveImage() {
+			var top = this.slide.getBoundingClientRect().top;
+			var h = this.slide.clientHeight;
+			var offset = document.body.scrollTop - this.slide.scrollTop;
+			var windowHeight = window.innerHeight;
 
-			window.addEventListener('scroll', function (e) {
-				var top = _this2.slide.getBoundingClientRect().top;
-				var h = _this2.slide.clientHeight;
-				var offset = document.body.scrollTop - _this2.slide.scrollTop;
-				var windowHeight = window.innerHeight;
-
-				if (top > 0 && top < h) {
-					console.log('inside bounding');
-					(0, _velocityAnimate2.default)(_this2.img, { translateY: offset }, 0);
-				}
-			});
+			if (top > 0 && top < h) {
+				console.log('inside bounding');
+				(0, _velocityAnimate2.default)(this.img, { translateY: offset }, 0);
+			}
 		}
 	}, {
 		key: 'render',
 		value: function render() {
-			var _this3 = this;
+			var _this2 = this;
 
 			var sectionLeft = {
 				height: this.props.height,
@@ -229,7 +235,7 @@ var HeaderSlide = function (_React$Component) {
 			return _react2.default.createElement(
 				'div',
 				{ className: 'row', style: { transition: 'all 300ms', overflow: 'hidden' }, ref: function ref(slide) {
-						return _this3.slide = slide;
+						return _this2.slide = slide;
 					} },
 				_react2.default.createElement(
 					'div',
@@ -240,7 +246,7 @@ var HeaderSlide = function (_React$Component) {
 					'div',
 					{ style: sectionRight, className: this.props.sectionRight.col },
 					_react2.default.createElement('img', { ref: function ref(img) {
-							return _this3.img = img;
+							return _this2.img = img;
 						}, src: this.props.sectionRight.img, style: { maxWidth: "100%", position: 'absolute', bottom: '0', left: '-200px' } })
 				)
 			);

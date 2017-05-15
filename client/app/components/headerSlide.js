@@ -5,21 +5,27 @@ class HeaderSlide extends React.Component {
 	constructor(props) {
 		super(props);
 	}
+
+	
 	
 	componentDidMount() {
+		window.addEventListener('scroll', this.scrollAnimation);
+	}
 
-		window.addEventListener('scroll', e => {
-			let top = this.slide.getBoundingClientRect().top;
-			let h = this.slide.clientHeight;
-			let offset = document.body.scrollTop - this.slide.scrollTop;
-			let windowHeight =  window.innerHeight;
+	scrollAnimation() {
+		(!window.requestAnimationFrame) ? this.moveImage() : window.requestAnimationFrame(moveImage);
+	}
 
-			if (top > 0 && top < h) { 
+	moveImage() {
+		let top = this.slide.getBoundingClientRect().top;
+		let h = this.slide.clientHeight;
+		let offset = document.body.scrollTop - this.slide.scrollTop;
+		let windowHeight =  window.innerHeight;
+
+		if (top > 0 && top < h) { 
 				console.log('inside bounding');
 				Velocity(this.img, { translateY: offset }, 0);
-			}
-			
-		});
+		}	
 	}
 
 	render() {
